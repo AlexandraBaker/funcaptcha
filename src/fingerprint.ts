@@ -389,7 +389,9 @@ function getFingerprint() {
         "WinCE",
     ][Math.floor(Math.random() * 7)];
 
-    fingerprint["CFP"] = ''; // We can't really randomise this
+    fingerprint["CFP"] = `canvas winding:yes~canvas fp:data:image/png;base64,${Buffer.from(
+        Math.random().toString()
+    ).toString("base64")}`; // We can't really randomise this
     fingerprint["FR"] = false; // Fake Resolution
     fingerprint["FOS"] = false; // Fake Operating System
     fingerprint["FB"] = false; // Fake Browser

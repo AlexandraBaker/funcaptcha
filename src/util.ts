@@ -168,7 +168,7 @@ function getBda(userAgent: string, referer?: string, location?: string): string 
                 },
                 {
                     "key": "user_agent_data_brands",
-                    "value": "Not?A_Brand,Chromium,Google Chrome"
+                    "value": "Chromium,Not A(Brand,Google Chrome"
                 },
                 {
                     "key": "user_agent_data_mobile",
@@ -268,7 +268,7 @@ function getBda(userAgent: string, referer?: string, location?: string): string 
                 },
                 {
                     "key": "window__tree_structure",
-                    "value": "[[],[]]"
+                    "value": "[[]]"
                 },
                 {
                     "key": "client_config__surl",
@@ -297,12 +297,9 @@ function getBda(userAgent: string, referer?: string, location?: string): string 
                 HL: 3,
                 NCE: true,
                 DT: "Roblox",
-                NWD: "false",
-                DA: null,
-                DR: null,
-                DMT: 25,
-                DO: null,
-                DOT: 25,
+                NWD: false,
+                DOTO: 1,
+                DMTO: 1
             }),
         },
     ];
